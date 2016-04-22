@@ -39,10 +39,10 @@ class CarouselManager(BrowserView):
                                   ('Carousel: Add Carousel Banner',))
 
             # make sure *only* Carousel banners are addable
-            aspect = ISelectableConstrainTypes(carousel)
-            aspect.setConstrainTypesMode(1)
-            aspect.setLocallyAllowedTypes(['Carousel Banner'])
-            aspect.setImmediatelyAddableTypes(['Carousel Banner'])
+            #aspect = ISelectableConstrainTypes(carousel)
+            #aspect.setConstrainTypesMode(1)
+            #aspect.setLocallyAllowedTypes(['Carousel Banner'])
+            #aspect.setImmediatelyAddableTypes(['Carousel Banner'])
 
             carousel.reindexObject()
 
